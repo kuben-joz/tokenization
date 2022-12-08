@@ -9,7 +9,7 @@ https://github.com/google/sentencepiece/issues/306
 import sentencepiece as spm
 import glob
 
-files = ','.join(glob.glob('../data/document_conv_result/chr*'))
+files = ','.join(glob.glob('data/conv/chr*'))
 
 spm.SentencePieceTrainer.Train(input=files, model_prefix='chiabert', vocab_size=32000,
                                user_defined_symbols=['[CLS]', '[SEP]', '[MASK]'],
