@@ -1,9 +1,9 @@
 #include <iostream>
 #include <fstream>
-#include <bits/stdc++.h>
 #include <thread>
 #include <random>
 #include <getopt.h>
+#include <cstring>
 
 using namespace std;
 using std::chrono::high_resolution_clock;
