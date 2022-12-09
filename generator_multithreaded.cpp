@@ -14,7 +14,7 @@ using std::chrono::seconds;
 random_device rd;
 mt19937 gen(rd());
 uniform_int_distribution<> distr1(0, 5001);
-uniform_int_distribution<> distr2(500, 10001);
+uniform_int_distribution<> distr2(500, 1001);
 
 string filepath = "hg38.analysisSet.fa";
 string output_path = ".";
