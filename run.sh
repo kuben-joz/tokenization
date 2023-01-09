@@ -8,5 +8,5 @@ then
 fi
 source env/bin/activate
 pip3 install sentencepiece
-python3 tokenization.py
+python3 tokenizer.py
 
