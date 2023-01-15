@@ -8,7 +8,8 @@ import glob
 
 # ******** normalizer
 tokenizer = Tokenizer(BPE(unk_token="[UNK]"))
-trainer = BpeTrainer(vocab_size=32000, show_progress=True, special_tokens=["[UNK]", "[CLS]", "[SEP]", "[PAD]", "[MASK]"])
+trainer = BpeTrainer(vocab_size=32000, show_progress=True,
+                     special_tokens=["[UNK]", "[CLS]", "[SEP]", "[PAD]", "[MASK]"])
 tokenizer.normalizer = normalizers.Sequence([NFKC(), Lowercase()])
 tokenizer.pre_tokenizer = WhitespaceSplit()
 #todo add to lower case

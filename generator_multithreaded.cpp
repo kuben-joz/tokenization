@@ -41,7 +41,6 @@ void handleChromosome(const int chr_len, string chr_name, char* chr, const int i
             q += q_offset;
         }
         output_file << '\n';
-        output_file << '\n';
     }
 
     cout << "Finished Chromosome " << chr_name << ", instance no " << id << endl;
