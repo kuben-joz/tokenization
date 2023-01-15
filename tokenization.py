@@ -9,11 +9,11 @@ https://github.com/google/sentencepiece/issues/306
 import sentencepiece as spm
 import glob
 
-files = ','.join(glob.glob('/mnt/evafs/sfglab/data/chiabert-tokenizer/data/conv/chr*'))
+files = ','.join(glob.glob('data/conv/chr*'))
 
 spm.SentencePieceTrainer.Train(input=files, model_prefix='chiabert', vocab_size=32000,
                                user_defined_symbols=['[CLS]', '[SEP]', '[MASK]'],
                                unk_piece='[UNK]', pad_piece='[PAD]',
                                character_coverage=1.0, model_type='bpe',
-                               num_threads=48)
+                               num_threads=48, input_sentence_size=10000000, shuffle_input_sequence=True)
 
