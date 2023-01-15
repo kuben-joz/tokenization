@@ -15,5 +15,5 @@ spm.SentencePieceTrainer.Train(input=files, model_prefix='chiabert', vocab_size=
                                user_defined_symbols=['[CLS]', '[SEP]', '[MASK]'],
                                unk_piece='[UNK]', pad_piece='[PAD]',
                                character_coverage=1.0, model_type='bpe',
-                               num_threads=48, input_sentence_size=10000000, shuffle_input_sequence=True)
+                               num_threads=48, input_sentence_size=10000000, shuffle_input_sentence=True)
 
